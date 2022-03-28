@@ -26,9 +26,8 @@
             <h4>Pola oznaczone * są wymagane! </h4>
 
             <button type="submit">Zaloguj</button>
-
-            <a href="register"><button>Nie masz konta? Zarejestruj się!</button></a
         </form>
+        <a href="register"><button>Nie masz konta? Zarejestruj się!</button></a
     </div>
 </div>
 </body>

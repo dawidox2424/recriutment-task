@@ -10,6 +10,7 @@
     <div class="logo">
     </div>
     <div class="login-container">
+        <a href="login"><button>Masz już konto? ZALOGUJ SIĘ</button></a>
         <form class="register" action="register" method="POST">
             <div class="messages">
                 <?php
@@ -20,7 +21,6 @@
                 }
                 ?>
             </div>
-            <a href="login"><button>Masz już konto? ZALOGUJ SIĘ</button></a>
             <h3>Dane osobowe</h3>
             <input name="name" type="text" placeholder="Imię">
             <input name="surname" type="text" placeholder="Nazwisko">

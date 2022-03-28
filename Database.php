@@ -20,7 +20,7 @@ class Database {
     {
         try {
             $conn = new PDO(
-                "pgsql:host=$this->host;port=5432;dbname=$this->database",
+                "mysql:host=$this->host;port=3306;dbname=$this->database",
                 $this->username,
                 $this->password,
                 ["sslmode"  => "prefer"]
