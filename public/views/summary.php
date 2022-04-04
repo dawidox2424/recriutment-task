@@ -33,11 +33,14 @@
         <p><?php echo $grafitti['remarks'] ?></p>
 
         <h4>Zdjęcie</h4>
+        <div class="grafittiPhoto">
         <img src="/../uploads/<?php echo $grafitti['photo'] ?>">
+        </div>
 
         <br/>
-
+        <div class="button-div">
         <button class="button"><a href="dashboard">Powrót</a></button>
+        </div>
 
     </div>
 </div>

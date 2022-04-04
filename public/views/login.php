@@ -20,8 +20,8 @@
                 ?>
                 </p>
             </div>
-                <input class="input" name="email" type="text" placeholder="Adres e-mail">
-                <input class="input" name="password" type="password" placeholder="Hasło">
+                <input class="input" name="email" type="text" placeholder="Adres e-mail*">
+                <input class="input" name="password" type="password" placeholder="Hasło*">
             <button class="button" type="submit">Zaloguj</button>
         </form>
         <a href="register"><button class="button">Nie masz konta? Zarejestruj się!</button></a

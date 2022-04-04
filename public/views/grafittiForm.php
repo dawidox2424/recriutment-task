@@ -9,7 +9,9 @@
 <body>
 <div class="container">
     <div class="graffitiForm">
+        <div class="button-div">
         <button class="button" type="submit"><a href="dashboard">Powrót</a></button>
+        </div>
         <h2>Zgłoszenie nielegalnych napisów lub znaków graficznych</h2>
         <p>W przypadku stwierdzenia nielegalnych napisów i znaków graficznych na elewacji w Krakowie prosimy o wypełnienie wszystkich wymaganych pól formularza, a następnie naciśnięcie przycisku „Wyślij formularz”. </p>
         <form name="form" class="register" action="addGrafitti" method="POST" ENCTYPE="multipart/form-data">

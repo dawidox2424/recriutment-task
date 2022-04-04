@@ -12,7 +12,6 @@ class DefaultController extends AppController
         if ($_COOKIE['loggedUser']) {
             $this->render('dashboard');
         }
-        //$this->render('login');
         return $this->render('login', ['messages' => ['Wykonano funkcję login z Default Controller!']]);
     }
 

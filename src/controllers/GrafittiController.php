@@ -54,11 +54,12 @@ class GrafittiController extends AppController
             return $this->render('grafittiForm', ['messages' => ['Wpisz proszę lokalizację nielegalnych napisów!']]);
         }
 
+        //wyłącznie dodane w powodu problemów z hostingiem - chodzi o przesyłanie plików
         set_time_limit(0);
         ini_set('upload_max_filesize', '50M');
         ini_set('post_max_size', '50M');
-        ini_set('max_input_time', 4000); // Play with the values
-        ini_set('max_execution_time', 4000); // Play with the values
+        ini_set('max_input_time', 4000);
+        ini_set('max_execution_time', 4000);
 
 
         if(empty($photo)) {
@@ -66,7 +67,7 @@ class GrafittiController extends AppController
         } else if (is_uploaded_file($_FILES['file']['tmp_name']) && $this->validate($_FILES['file'])){
             $destination = $this->base_path() . '/public/uploads/';
             $fileLocation = $destination . $_FILES['file']['name'];
-            move_uploaded_file($_FILES['file']['tmp_name'], $location);
+            move_uploaded_file($_FILES['file']['tmp_name'], $fileLocation);
         }
 
 
@@ -77,7 +78,7 @@ class GrafittiController extends AppController
             return $this->render('grafittiForm', ['messages' => ['Wybierz proszę rodzaj nielegalnych napisów!']]);
         }
 
-        $grafitti = new Grafitti($notifierEmail, $id_property, $fileLocation, $_FILES['file']['name'], $findingDate, $type, $remarks);
+        $grafitti = new Grafitti($notifierEmail, $id_property, $location, $_FILES['file']['name'], $findingDate, $type, $remarks);
 
         $this->GrafittiRepository->addGrafitti($grafitti); //dodanie do bazy
 

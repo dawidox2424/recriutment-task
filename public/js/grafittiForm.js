@@ -4,8 +4,6 @@ const locationInput = document.querySelector('select[name = "location"]');
 const photoInput = document.querySelector('input[name = "photo"]');
 const findingDateInput = document.querySelector('input[name = "findingDate"]');
 const typeInput = document.querySelector('select[name = "type"]');
-const remarksInput = document.querySelector('input[name = "remarks"]');
-const rodoInput = document.querySelector('input[name = "rodo0"]');
 
 const form = document.querySelector('form[name="form"]');
 let error = 0;
@@ -94,7 +92,6 @@ function validateType(){
     }
 }
 
-//sprawdzanie czy pola wymagane są puste - przy wprowadzaniu znaków następuje ponowne sprawdzenie
 notifierEmailInput.addEventListener('keyup', validateEmail);
 id_propertyInput.addEventListener('change', validateId_Property);
 locationInput.addEventListener('change', validateLocation);
@@ -102,7 +99,6 @@ locationInput.addEventListener('change', validateLocation);
 findingDateInput.addEventListener('change', validateFindingDate);
 typeInput.addEventListener('change', validateType);
 
-// dodatkowe sprawdzenie pod koniec czy na pewno daną są wprowadzeone (po kliknięciu submita)
 form.addEventListener('submit', (event) =>{
     error = 0;
     if(!validateEmail()) { alert("Proszę sprawdź poprawność adresu email!"); error = 1; }
