@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="public/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/style.css">
     <title>Logowanie</title>
 </head>
 
 <body>
 <div class="container">
-    <div class="logo">
-        <!-- <img src="public/img/logo.png"> -->
-    </div>
-    <div class="login-container">
+    <h4>Pola oznaczone * są wymagane! </h4>
         <form class="login" action="login" method="POST">
             <div class="messages">
+                <p>
                 <?php
                 if(isset($messages)){
                     foreach($messages as $message) {
@@ -20,14 +18,12 @@
                     }
                 }
                 ?>
+                </p>
             </div>
-            <input name="email" type="text" placeholder="Adres e-mail">
-            <input name="password" type="password" placeholder="Hasło">
-            <h4>Pola oznaczone * są wymagane! </h4>
-
-            <button type="submit">Zaloguj</button>
+                <input class="input" name="email" type="text" placeholder="Adres e-mail">
+                <input class="input" name="password" type="password" placeholder="Hasło">
+            <button class="button" type="submit">Zaloguj</button>
         </form>
-        <a href="register"><button>Nie masz konta? Zarejestruj się!</button></a
+        <a href="register"><button class="button">Nie masz konta? Zarejestruj się!</button></a
     </div>
-</div>
 </body>

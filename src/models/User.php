@@ -1,61 +1,75 @@
 <?php
 
-class User {
-    private $email;
-    private $password;
+class User
+{
     private $name;
     private $surname;
+    private $pesel;
+    private $email;
+    private $password;
     private $phone;
+    private $zipcode;
+    private $street;
+    private $buildingNumber;
+    private $apartmentNumber;
+    private $district;
 
-    public function __construct(
-        string $email,
-        string $password,
-        string $name,
-        string $surname
-    ) {
-        $this->email = $email;
-        $this->password = $password;
+    public function __construct($name, $surname, $pesel, $email, $password, $phone, $zipcode, $street, $buildingNumber, $apartmentNumber, $district)
+    {
         $this->name = $name;
         $this->surname = $surname;
+        $this->pesel = $pesel;
+        $this->email = $email;
+        $this->password = $password;
+        $this->phone = $phone;
+        $this->zipcode = $zipcode;
+        $this->street = $street;
+        $this->buildingNumber = $buildingNumber;
+        $this->apartmentNumber = $apartmentNumber;
+        $this->district = $district;
     }
 
-    public function getEmail(): string
-    {
-        return $this->email;
-    }
-
-    public function getPassword()
-    {
-        return $this->password;
-    }
-
-    public function getName(): string
-    {
+    public function getName(){
         return $this->name;
     }
 
-    public function setName(string $name): void
-    {
-        $this->name = $name;
-    }
-
-    public function getSurname(): string
-    {
+    public function getSurname(){
         return $this->surname;
     }
 
-    public function setSurname(string $surname): void
-    {
-        $this->surname = $surname;
+    public function getPesel(){
+        return $this->pesel;
     }
 
-    public function getPhone()
-    {
+    public function getEmail(){
+        return $this->email;
+    }
+
+    public function getPassword(){
+        return $this->password;
+    }
+
+    public function getPhone(){
         return $this->phone;
     }
 
-    public function setPhone($phone): void
-    {
-        $this->phone = $phone;
+    public function getZipcode(){
+        return $this->zipcode;
+    }
+
+    public function getStreet(){
+        return $this->street;
+    }
+
+    public function getBuildingNumber(){
+        return $this->buildingNumber;
+    }
+
+    public function getApartmentNumber(){
+        return $this->apartmentNumber;
+    }
+
+    public function getDistrict(){
+        return $this->district;
     }
 }

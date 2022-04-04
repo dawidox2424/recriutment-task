@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    font-size: 22px;
+    background-color: lightsalmon;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    overflow: auto;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.button{
+    border-radius: 20px;
+    padding: 1em;
+    background-color: bisque;
+    width: 10vw;
+    margin: 5%;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.messages{
+    color: red;
+}
+
+.register{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input {
+    background-color: bisque;
+    padding: 15px;
+    font-size: 15px;
+    height: 0.5em;
+    margin: 8px;
+    width: 25vw;
+    border-radius: 20px;
+    box-shadow: 5px 5px 17px -7px rgba(66, 68, 90, 1);
+}
+
+.district {
+    background-color: bisque;
+    padding: 15px;
+    font-size: 15px;
+    margin: 8px;
+    width: 25vw;
+    border-radius: 20px;
+    box-shadow: 5px 5px 17px -7px rgba(66, 68, 90, 1);
+}
+
+.statements{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+    text-align: center;
+    font-size: 20px;
+    width: 45vw;
+}
+
+.requirements{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em;
+    text-align: center;
+    font-size: 25px;
+}
+
+input.not-valid,
+textarea.not-valid {
+    background-color: #ff6a59;
+}
+
+.district.not-valid,
+textarea.not-valid {
+    background-color: #ff6a59;
+}
+
+.userData{
+    width: 50vw;
+    height: auto;
+}
+
+.graffitiForm{
+    width: 50vw;
+    height: auto;
+    align-content: center;
+}
+
+.g-recaptcha{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
